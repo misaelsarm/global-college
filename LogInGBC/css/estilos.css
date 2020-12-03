@@ -1,0 +1,518 @@
+﻿@charset "UTF-8";
+html {
+  font-size: 15px; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #111111; }
+
+.bienvenidos {
+  color: #fff;
+  background-size: cover;
+  background-attachment: fixed !important;
+  height: 20vh;
+  display: flex;
+  flex-direction: column; }
+
+.bienvenidosc {
+  background: url("../images/portadaSmall.jpg") no-repeat center top;
+  color: #fff;
+  background-size: cover;
+  background-attachment: fixed !important;
+  height: 20vh;
+  display: flex;
+  flex-direction: column; }
+
+.encabezado {
+  background: #111111;
+  color: #fff;
+  padding: .5rem 0;
+  transition: all .5s ease; }
+
+
+
+.encabezado2 {
+  color: #000;
+  padding: .5rem 0;
+  transition: all .6s ease;
+  font-family: 'Open Sans';
+  font-size: 4rem;
+}
+
+.texto-parrafo {
+  color: #000;
+  padding: .5rem 0;
+  transition: all .5s ease;
+  font-family: 'Open Sans';
+  font-size: 1.1rem;
+}
+
+.encabezado.fondo-menu {
+  background: #111111;
+  padding: 1rem 0; }
+
+.encabezado .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.encabezado .logo img {
+  width: 120px;
+  height: auto; }
+
+/*Estilos para el boton: buscar y menu*/
+.boton-menu {
+  border: 0;
+  font-size: 2rem;
+  background: transparent;
+  color: #fff;
+  margin-left: auto; }
+
+.boton-menu:focus {
+  outline: 0; }
+
+#menu-principal {
+  flex: 1 1 100%; }
+
+#menu-principal ul {
+  padding: 0;
+  list-style: none;
+  margin: 1rem 0 0 0; }
+
+#menu-principal ul a {
+  display: block;
+  padding: .8rem 0;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  border-top: 1px solid #8c8888;
+  text-decoration: none; }
+
+#menu-principal ul a:hover,
+#menu-principal ul li.active a {
+  color: #07466b; }
+
+.texto-encabezado {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center; }
+
+.texto-encabezado .display-4 {
+  margin-top: 4rem; }
+
+.texto-encabezado .btn-primary {
+  margin-top: 1rem; }
+
+.btn-primary {
+  color: #fff;
+  background-color: #07466b;
+  border-color: transparent;
+  transition: all .5s ease; }
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active:hover {
+  background-color: #48ac48;
+  border-color: transparent; }
+
+.flecha-bajar a {
+  display: inline-block;
+  color: #fff;
+  font-size: 4rem;
+  animation: flecha-animada 2s ease-in-out infinite; }
+
+@keyframes flecha-animada {
+  from {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(6px); }
+  to {
+    transform: translateY(0); } }
+/*-----------------------------
+SECCION AGENCIA
+------------------------------*/
+.escuela {
+  background: #07466b;
+  color: #fff; }
+
+.escuela img {
+  width: 80%;
+  margin: 0 auto;
+  display: block; }
+
+/*----------------------------
+SECCION TU MEJOR OPCION
+----------------------------*/
+.tu-mejor-opcion h2 span {
+  color: #07466b; }
+
+.tu-mejor-opcion ul,
+.tu-mejor-opcion ul li {
+  list-style: none; }
+
+.tu-mejor-opcion ul li .fa {
+  font-size: 2.3rem;
+  background: #48ac48;
+  border-radius: 50%;
+  width: 4.7rem;
+  height: 4.7rem;
+  line-height: 4.7rem;
+  color: #fff; }
+
+.tu-mejor-opcion ul li .contenedor-opcion h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: .8rem; }
+
+.tu-mejor-opcion ul li {
+  min-height: 9rem; }
+
+/*-------------------------------
+SECCION SERVICIOS
+--------------------------------*/
+.servicios {
+  background: url("../images/serviciosSmall.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed !important;
+  color: #fff; }
+
+.servicios article {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0; }
+
+.servicios img {
+  flex: 0 0 60px;
+  overflow: hidden;
+  margin-right: 1rem; }
+
+.servicios h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  flex: 1 1 auto; }
+
+.servicios h3 a {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none; }
+
+.servicios h3 a::after {
+  content: "\f054";
+  font-family: FontAwesome;
+  font-size: 2rem;
+  margin-left: 1rem;
+  opacity: .5;
+  position: relative;
+  left: 0;
+  transition: all .5s ease; }
+
+.servicios h3 a:hover::after {
+  left: -.5rem;
+  opacity: 1;
+  color: #07466b; }
+
+/*---------------------------------
+SECCION FORMULATIO DE CONTACTO
+------------------------------------*/
+.contacto label {
+  font-size: 1.3rem; }
+
+.contacto .txtb:focus {
+  border-color: rgba(43, 170, 156, 0.5);
+  -webkit-box-shadow: 0 0 0 0.5px rgba(43, 170, 156, 0.5);
+  box-shadow: 0 0 0 0.5px rgba(43, 170, 156, 0.5); }
+
+.contacto .form-control {
+  border: 1px solid rgba(0, 0, 0, 0.15); }
+
+/*---------------------------------
+SECCION ÚLTIMOS PROYECTOS
+------------------------------------*/
+.ultimos-proyectos a {
+  text-decoration: none; }
+
+.ultimos-proyectos a h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #111111; }
+
+.ultimos-proyectos .container {
+  padding-left: 0;
+  padding-right: 0; }
+
+.ultimos-proyectos .owl-nav {
+  display: flex;
+  justify-content: center;
+  margin: .3rem 0; }
+
+.ultimos-proyectos .owl-prev,
+.ultimos-proyectos .owl-next {
+  font-size: 3rem;
+  margin: 0 .5rem;
+  color: #07466b;
+  transition: all .5s ease; }
+
+.ultimos-proyectos .owl-prev:hover,
+.ultimos-proyectos .owl-next:hover {
+  color: #48ac48; }
+
+/*----------------------------------------
+SECCION PIE DE PAGINA
+-----------------------------------------*/
+.piedepagina {
+  background: #111111;
+  color: #fff;
+  text-align: center;
+  font-size: .9rem; }
+
+.piedepagina .redes-sociales {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.piedepagina .redes-sociales a {
+  color: #fff;
+  font-size: 1.3rem;
+  margin: 0 .5rem;
+  opacity: .7;
+  transition: all .5s ease; }
+
+.piedepagina .redes-sociales a:hover {
+  opacity: 1; }
+
+.ir-arriba {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  color: #12afaf;
+  text-decoration: none;
+  z-index: 99999;
+  line-height: 0;
+  display: none;
+  transition: all .5s ease; }
+
+.ir-arriba:hover,
+.ir-arriba:focus {
+  outline: 0;
+  text-decoration: none;
+  color: #fff; }
+
+/*-------------------------------------------
+ESTILOS PAGINA NOSOTROS
+--------------------------------------------*/
+.paginas-internas .bienvenidos {
+  height: 50vh; }
+
+.paginas-internas .bienvenidosc {
+  height: 50vh; }
+
+.paginas-internas .ruta {
+  background: #07466b;
+  color: #fff; }
+
+.paginas-internas .ruta a {
+  color: #fff;
+  text-decoration: underline; }
+
+.paginas-internas .ruta a:hover {
+  text-decoration: none; }
+
+.paginas-internas .panel .panel-heading {
+  font-size: 1.2rem; }
+
+.paginas-internas .panel .panel-heading a {
+  background: #07466b;
+  color: #fff;
+  display: block;
+  padding: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all .5s ease; }
+
+.paginas-internas .panel .panel-heading a:hover {
+  background: #48ac48;
+  color: #fff; }
+
+/*-------------------------------------------
+ESTILOS PAGINA SERVICIOS
+--------------------------------------------*/
+.paginas-internas .lista-servicios {
+  background: #48ac48; }
+
+.paginas-internas .lista-servicios .item-servicios {
+  background: #ffffff;
+  text-align: center;
+  border: 5px solid #057705;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 1rem; }
+
+.paginas-internas .lista-servicios .item-servicios .fa {
+  font-size: 6rem;
+  color: #07466b;
+  margin-bottom: 1rem;
+  transition: all 1s ease; }
+
+.paginas-internas .lista-servicios .item-servicios:hover .fa {
+  transform: rotateY(360deg);
+  transform-style: preserve-3d; }
+
+/*---------------------------------------------
+EMPIEZAN LAS MEDIAS QUERIES
+--------------------------------------------*/
+
+    @media (min-width: 768px) {
+
+        .gbcencabezado{
+        font-size: 3.5rem;
+    }
+
+   #menu-principal {
+    height: auto !important;
+    display: block;
+    flex: 0 1 auto;
+    margin-left: auto;
+    order: 1; }
+
+  #menu-principal ul {
+    display: flex;
+    margin: 0 0 0 0; }
+
+  #menu-principal ul li a {
+    padding: .8rem;
+    text-transform: capitalize;
+    margin: 0 .3rem;
+    border-top: 0px;
+    border-bottom: 4px solid transparent;
+    transition: all 0.5s ease; }
+
+  #menu-principal ul li.active a,
+  #menu-principal ul li a:hover {
+    color: #12AFAF;
+    border-bottom: 4px solid; }
+
+  .boton-buscar {
+    margin-left: 1rem;
+    margin-right: 0;
+    order: 2; }
+
+  #bloque-buscar {
+    order: 3;
+    position: absolute;
+    width: 20rem;
+    right: 3rem;
+    top: 2.8rem;
+    transition: all 0.5s ease; }
+
+  .servicios article {
+    margin: 1rem 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+
+  .servicios img {
+    flex: 0 0 160px;
+    overflow: hidden;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    transition: all 1s ease; }
+
+  .servicios article:hover img {
+    transform: rotateY(360deg);
+    transform-style: preserve-3d; }
+
+  .servicios h3 a::after {
+    content: ""; }
+
+  .servicios h3 {
+    margin: 0 0 .5rem 0;
+    font-size: 1.5rem;
+    flex: 0 1 auto;
+    width: 100%; }
+
+  .servicios h3 a {
+    display: block;
+    width: 100%; }
+
+  .servicios p {
+    width: 100%; }
+
+  .servicios .btn-secondary {
+    margin-top: auto; }
+
+  .paginas-internas .lista-servicios .col-md-4 {
+    display: flex; }
+
+  .paginas-internas .lista-servicios .item-servicios {
+    display: flex;
+    flex-direction: column; }
+
+  .paginas-internas .lista-servicios .item-servicios .btn-primary {
+    margin-top: auto; } }
+@media (min-width: 992px) {
+  html {
+    font-size: 16px; }
+
+  .bienvenidos {
+    }
+
+    .bienvenidosc {
+    background: url("../images/portadaLarge.jpg") no-repeat center top;
+    background-size: cover; }
+
+  .tu-mejor-opcion ul li {
+    display: flex;
+    min-height: 7rem; }
+
+  .tu-mejor-opcion ul li .fa {
+    text-align: center;
+    flex: 0 1 auto;
+    margin-right: 1rem;
+    transition: all 1s ease; }
+
+  .tu-mejor-opcion ul li:hover .fa {
+    transform: rotateY(360deg);
+    transform-style: preserve-3d;
+    background: #12AFAF; }
+
+  .contenedor-opcion {
+    flex: 1 0 0px; }
+
+  .tu-mejor-opcion ul li .contenedor-opcion h4 {
+    margin-top: 0;
+    font-size: 1rem; }
+
+  .tu-mejor-opcion ul:first-child .fa {
+    order: 1;
+    margin-left: 1rem;
+    margin-right: 0; }
+
+  .tu-mejor-opcion ul li p {
+    font-size: .85rem;
+    width: 100%; }
+
+  .servicios {
+    background: url("../images/serviciosLarge.jpg") no-repeat center center;
+    background-size: cover; } }
+
+/*----------------------------
+PARA LOS ESSENTIAL SOUNDS
+----------------------------*/
+.essentials:hover{
+    cursor:pointer;
+}
+
+.lbl{
+     font-family: 'Open Sans', sans-serif;
+     font-size:25px;
+}
+
+
+
+/*# sourceMappingURL=estilos.css.map */
