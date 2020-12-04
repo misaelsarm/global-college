@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1162" height="1162" viewBox="0 0 1162 1162">
+  <g id="Grupo_34" data-name="Grupo 34" transform="translate(-5151 -1472)">
+    <rect id="Rectángulo_5" data-name="Rectángulo 5" width="1162" height="1162" rx="581" transform="translate(5151 1472)" fill="#07466b"/>
+    <g id="english" transform="translate(5426 1740)">
+      <g id="Grupo_2" data-name="Grupo 2" transform="translate(-10 91)">
+        <g id="Grupo_1" data-name="Grupo 1">
+          <path id="Trazado_3" data-name="Trazado 3" d="M541.533,298.476l88.9-187.15A24.719,24.719,0,0,0,608.1,76H24.72A24.719,24.719,0,0,0,0,100.72V496.232a24.719,24.719,0,0,0,24.72,24.719H608.1a24.719,24.719,0,0,0,22.328-35.325ZM49.439,471.512V125.439H568.991L491.837,287.87a24.721,24.721,0,0,0,0,21.212l77.155,162.431Z" transform="translate(0 -76)" fill="#fff"/>
+          <text id="ES" transform="translate(143 303)" fill="#fff" font-size="237" font-family="DMSans-Bold, DM Sans" font-weight="700"><tspan x="0" y="0">ES</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
