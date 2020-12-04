@@ -1,0 +1,26 @@
+nav {
+   // background: $global-college-primary;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+
+    .logo {
+        img {
+            width: 120px;
+        }
+    }
+
+    ul {
+        display: none;
+    }
+
+    .menu {
+        height: 40px;
+        width: 40px;
+        background: white;
+        
+    }
+}
