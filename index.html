@@ -7,50 +7,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
-
-    <link href='css/font-awesome.min.css' rel='stylesheet' type='text/css'>
-
-    <!-- <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/estilos.css"> -->
-
     <link rel="stylesheet" href="css/style.css">
+
 
 </head>
 
 <body>
-
     <nav>
         <div class="logo">
-            <img src="./images/LogoBlancoSmallH.png" alt="">
+            <img src="./assets/global-college-logo.svg" alt="">
         </div>
 
-        <ul>
-            <li>Inicio</li>
-            <li>Nosotros</li>
-            <li>Servicios</li>
-        </ul>
+        <!-- <div class="nav-links">
+            <div class="nav-links-wrapper">
+                <ul>
+                    <li>Inicio</li>
+                    <li>Nosotros</li>
+                    <li>Servicios</li>
+                </ul>
 
-        <ul>
-            <li>Cotización</li>
-            <li>Iniciar sesión</li>
-        </ul>
+                <ul>
+                    <li>Cotización</li>
+                    <li>Iniciar sesión</li>
+                </ul>
+            </div>
+        </div> -->
 
-        <div class="menu">
+        <div id="nav-grid" class="nav-grid nav-hidden">
+            <a href="#home">
+                <div class="nav-link">
+                    <p>Inicio</p>
+                </div>
+            </a>
+            <a href="#nosotros">
+                <div class="nav-link">
+                    <p>Nosotros</p>
+                </div>
+            </a>
+            <a href="#servicios">
+                <div class="nav-link">
+                    <p>Servicios</p>
+                </div>
+            </a>
+            <a href="#beneficios">
+                <div class="nav-link">
+                    <p>Beneficios</p>
+                </div>
+            </a>
+            <a href="/LogInGBC/Cotizador.aspx">
+                <div class="nav-link">
+                    <p>Cotizacion</p>
+                </div>
+            </a>
+            <a href="/LogInGBC/Login.aspx">
+                <div class="nav-link">
+                    <p>Iniciar sesion</p>
+                </div>
+            </a>
+        </div>
+
+        <div id="menu" class="menu">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
     </nav>
 
-    <header>
+    <header id="home">
         <h1>Stop dreaming. Start doing</h1>
         <p>Your modern school</p>
         <button>Conocer más</button>
     </header>
 
     <main>
-        <section class="intro">
+        <section class="slider-container">
+            <img id="prev" class="chevron-left" src="./assets/chevron.svg" alt="">
+            <img id="next" class="chevron-right" src="./assets/chevron.svg" alt="">
+            <div class="slide">
+                <img class="slide-img" id="lastClone" src="./assets/8.Nacional.jpg" alt="">
+                <img class="slide-img" src="./assets/1.Face-to-Face (1).jpg" alt="">
+                <img class="slide-img" src="./assets/2.Excel.jpg" alt="">
+                <img class="slide-img" src="./assets/3.Traduccion.jpg" alt="">
+                <img class="slide-img" src="./assets/4.Grupales.jpg" alt="">
+                <img class="slide-img" src="./assets/5.Kids.jpg" alt="">
+                <img class="slide-img" src="./assets/6.Juegos.jpg" alt="">
+                <img class="slide-img" src="./assets/7.Spanish.jpg" alt="">
+                <img class="slide-img" src="./assets/8.Nacional.jpg" alt="">
+                <img class="slide-img" id="firstClone" src="./assets/1.Face-to-Face (1).jpg" alt="">
+            </div>
+        </section>
+        <section id="nosotros" class="intro">
 
             <h2>Crece</h2>
             <p>
@@ -62,126 +108,7 @@
         </section>
     </main>
 
-
-    <!-- <section class="bienvenidos">
-
-        <header class="encabezado navbar-fixed-top" role="banner" id="encabezado">
-            <div class="container">
-                <a href="index.html" class="logo">
-                    <img src="images/LogoBlancoSmallH.png" alt="Logo">
-                </a>
-
-                <button type="button" class="boton-menu hidden-md-up " data-toggle="collapse"
-                    data-target="#menu-principal" aria-expanded="false">
-                    <i class="fa fa-bars" aria-hidden="true"></i></button>
-
-
-
-                <nav id="menu-principal" class="collapse">
-                    <ul>
-                        <li class="active"><a href="index.html" data-scroll>Inicio</a></li>
-                        <li><a href="#escuela" data-scroll>Nosotros</a></li>
-                        <li><a href="#servicios" data-scroll>Servicios</a></li>
-                        <li><a href="/LogInGBC/Cotizador.aspx" data-scroll>Cotización</a></li>
-                        <li><a href="/LogInGBC/Login.aspx" data-scroll>Login</a></li>
-                    </ul>
-                </nav>
-
-            </div>
-        </header>
-
-
-        <div class="texto-encabezado text-xs-center">
-
-            <div class="container">
-                <h3 class="gbcencabezado display-4 wow bounceIn">GLOBAL COLLEGE MONTERREY</h3>
-                <p class="wow bounceIn" data-wow-delay=".3s">Stop Dreaming, Start Doing</p>
-            </div>
-
-        </div>
-        <div class="flecha-bajar text-xs-center">
-            <a data-scroll href="#escuela"> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-        </div>
-
-    </section> -->
-    <!-- <section class="tu-mejor-opcion p-y-1">
-        <div class="container">
-
-            <h2 class="h4 text-xs-center font-weight-bold m-t-1">¿Porque somos <span>tu mejor opción?</span></h2>
-            <p class="text-xs-center m-b-3">
-                El inglés más que un complemento es algo esencial
-            </p>
-
-            <div class="row">
-                <ul class="col-xs-6 col-lg-4 text-xs-center text-lg-left">
-                    <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay=".3s">
-                        <i class="fa fa-microphone" aria-hidden="true"></i>
-
-                        <div class="contenedor-opcion">
-                            <h4>Sistema de enseñanza único</h4>
-                            <p class="hidden-md-down">Sistema único en el cual empiezas primero hablando, nuestro
-                                sistema no deja de lado la gramática ya que es aprendida mediante un sistema
-                                conversacional.</p>
-                        </div>
-                    </li>
-
-                    <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay=".7s">
-                        <i class="fa  fa-check-circle-o" aria-hidden="true"></i>
-                        <div class="contenedor-opcion">
-                            <h4>Pronunciación Perfecta</h4>
-                            <p class="hidden-md-down">Toda nuestra pronunciación esta basada en el diccionario MERRIAM
-                                WEBSTER.</p>
-                        </div>
-                    </li>
-
-                    <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay="1.1s">
-
-                        <i class="fa  fa-users" aria-hidden="true"></i>
-
-                        <div class="contenedor-opcion">
-                            <h4>Conversación en grupo</h4>
-                            <p class="hidden-md-down">Nuestro curso está diseñado de tal forma que el alumno pueda
-                                expresarse en público.</p>
-                        </div>
-                    </li>
-
-                </ul>
-
-                <div class="hidden-md-down col-lg-4 text-lg-center">
-                    <img class="everde" src="images/EstandarteVerde.svg" alt="Estandarte Verde">
-                </div>
-
-                <ul class="col-xs-6 col-lg-4 text-xs-center text-lg-right">
-                    <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay=".5s">
-                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                        <div class="contenedor-opcion">
-                            <h4>Tiempos</h4>
-                            <p class="hidden-md-down">Para nosotros es muy importante el tiempo de nuestros alumnos y
-                                debido a eso nuestras clases son solo dos veces por semana o un sábado.</p>
-                        </div>
-                    </li>
-                    <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay=".9s">
-                        <i class="fa  fa-play" aria-hidden="true"></i>
-                        <div class="contenedor-opcion">
-                            <h4>ESSENTIAL SOUNDS®</h4>
-                            <p class="hidden-md-down">Todo tipo de corrección en pronunciación es aplicado con el
-                                ESSENTIAL SOUNDS®.</p>
-                        </div>
-                    </li>
-                    <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay="1.3s">
-                        <i class="fa  fa-user" aria-hidden="true"></i>
-                        <div class="contenedor-opcion">
-                            <h4>Instructores bien capacitados</h4>
-                            <p class="hidden-md-down">Todo instructor tiene que estar certificado ante el ICET® y
-                                cuentan con un entrenamiento de más de 200 horas.</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section> -->
-
-    <section class="benefits">
+    <section id="beneficios" class="benefits">
         <h2 class="benefits-title">Somos tu mejor opcion</h2>
 
         <div class="benefits-item">
@@ -242,70 +169,74 @@
             </div>
     </section>
 
-    <section class="services">
+    <section id="servicios" class="services">
 
         <h2 class="services-title">
             Servicios
         </h2>
 
-        <div class="services-wrapper services-wrapper-1">
-            <h2>
-                Inglés
-            </h2>
-            <img src="./assets/english.svg" alt="">
-            <p>
-                El mejor curso de inglés a tu medida personalizado y con el mejor sistema de conversacion avanzada en el
-                mercado
-                toda la drenalina de tener cara a cara a un maestro focalizado en todas tus dudas y haciendo lo
-                imposible por
-                que tu aprendas.
-            </p>
-        </div>
+        <div class="services-grid">
+            <div class="services-wrapper services-wrapper-1">
+                <h2>
+                    Inglés
+                </h2>
+                <img src="./assets/english.svg" alt="">
+                <p>
+                    El mejor curso de inglés a tu medida personalizado y con el mejor sistema de conversacion avanzada
+                    en el
+                    mercado
+                    toda la drenalina de tener cara a cara a un maestro focalizado en todas tus dudas y haciendo lo
+                    imposible por
+                    que tu aprendas.
+                </p>
+            </div>
 
-        <div class="services-wrapper services-wrapper-2">
-            <h2>Excel</h2>
-            <img src="./assets/excel.svg" alt="">
-            <p>
-                Nuestro plan de excel esta enfocado en el area laboral 100% con ejemplos y situaciones reales no solo
-                basadas
-                en
-                el aprendizaje si no en la practica y con tiempos de entrega. ¿te atreves al reto?
-            </p>
-        </div>
-        <div class="services-wrapper services-wrapper-3">
-            <h2>Traducción e interpretación</h2>
-            <img src="./assets/traduccion.svg" alt="">
-            <p>
-                A nivel empresarial tenemos interpretacion simultanea de inglés al español y viceversa asi como
-                documentación.
-            </p>
-        </div>
-        <div class="services-wrapper services-wrapper-4">
-            <h2>Talleres (variedad de cursos)</h2>
-            <img src="./assets/variedad.svg" alt="">
-            <p>
-                Cursos financieros entrevistas de trabajo liderazgo entre muchos otros son servicios gratuitos para
-                nuestros
-                estudiantes activos 100% en inglés
-            </p>
-        </div>
-        <div class="services-wrapper services-wrapper-5">
-            <h2>Spanish</h2>
-            <img src="./assets/spanish.svg" alt="">
-            <p>
-                We also have personalized classes for people learning Spanish. all classes can be since beginenrs to
-                advance
-                focusing in conversation.
-            </p>
-        </div>
-        <div class="services-wrapper services-wrapper-6">
-            <h2>Languages</h2>
-            <img src="./assets/lenguajes.svg" alt="">
-            <p>
-                Ademas de nuestros idiomas principales actualmente contamos con Aleman y Portuges en su formato
-                personalizado
-                para quellos que buscan mas. ampliamente recomendable para personas con nivel avanzado de inglés.
-            </p>
+            <div class="services-wrapper services-wrapper-2">
+                <h2>Excel</h2>
+                <img src="./assets/excel.svg" alt="">
+                <p>
+                    Nuestro plan de excel esta enfocado en el area laboral 100% con ejemplos y situaciones reales no
+                    solo
+                    basadas
+                    en
+                    el aprendizaje si no en la practica y con tiempos de entrega. ¿te atreves al reto?
+                </p>
+            </div>
+            <div class="services-wrapper services-wrapper-3">
+                <h2>Traducción e interpretación</h2>
+                <img src="./assets/traduccion.svg" alt="">
+                <p>
+                    A nivel empresarial tenemos interpretacion simultanea de inglés al español y viceversa asi como
+                    documentación.
+                </p>
+            </div>
+            <div class="services-wrapper services-wrapper-4">
+                <h2>Talleres (variedad de cursos)</h2>
+                <img src="./assets/variedad.svg" alt="">
+                <p>
+                    Cursos financieros entrevistas de trabajo liderazgo entre muchos otros son servicios gratuitos para
+                    nuestros
+                    estudiantes activos 100% en inglés
+                </p>
+            </div>
+            <div class="services-wrapper services-wrapper-5">
+                <h2>Spanish</h2>
+                <img src="./assets/spanish.svg" alt="">
+                <p>
+                    We also have personalized classes for people learning Spanish. all classes can be since beginenrs to
+                    advance
+                    focusing in conversation.
+                </p>
+            </div>
+            <div class="services-wrapper services-wrapper-6">
+                <h2>Languages</h2>
+                <img src="./assets/lenguajes.svg" alt="">
+                <p>
+                    Ademas de nuestros idiomas principales actualmente contamos con Aleman y Portuges en su formato
+                    personalizado
+                    para quellos que buscan mas. ampliamente recomendable para personas con nivel avanzado de inglés.
+                </p>
+            </div>
         </div>
     </section>
 
@@ -320,77 +251,56 @@
             Contáctanos
         </h2>
 
-        <div class="footer-links explora">
-            <h2>Explora</h2>
-            <ul>
-                <li>Inicio</li>
-                <li>Beneficios</li>
-                <li>Servicios</li>
-                <li>Inicia sesión</li>
-                <li>Cotización</li>
-            </ul>
-        </div>
+        <div class="footer-links-wrapper">
+            <div class="footer-links explora">
+                <h2>Explora</h2>
+                <ul>
+                    <li>
+                        <a href="#home">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#beneficios">Beneficios</a>
+                    </li>
+                    <li>
+                        <a href="#servicios">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="/LogInGBC/Login.aspx">Inicia sesión</a>
+                    </li>
+                    <li>
+                        <a href="/LogInGBC/Cotizador.aspx">Cotización</a>
+                    </li>
+                </ul>
+            </div>
 
+            <div class="footer-links contacto">
+                <h2>Contacto</h2>
+                <ul>
+                    <div class="numbers">
+                        <li>
+                            <a href="tel:01 81 2593 9620">01 81 2593 9620</a>
+                        </li>
+                        <li>
+                            <a href="tel:01 81 2755 1350">01 81 2755 1350</a>
+                        </li>
+                    </div>
+                    <li class="social"><a target="_blank" href="https://www.facebook.com/globalcollegemonterrey">Facebook</a></li>
+                    <li>
+                        <a
+                            href="mailto:robertovegaglobalcollegemonterrey.com">robertovega@<br>globalcollege<br>monterrey.com</a>
+                    </li>
+                </ul>
+            </div>
 
-
-
-        <div class="footer-links contacto">
-            <h2>Contacto</h2>
-            <ul>
-                <div class="numbers">
-                    <li>01 81 2593 9620</li>
-                    <li>01 81 2755 1350</li>
-                </div>
-                <li class="social">Facebook</li>
-                <li>robertovega@<br>globalcollege<br>monterrey.com</li>
-
-            </ul>
-        </div>
-
-        <div class="image-logo">
-            <img src="./images/LogoBlancoSmallH.png" alt="">
+            <div class="image-logo">
+                <img src="./images/LogoBlancoSmallH.png" alt="">
+            </div>
         </div>
 
         <p>2017 - <span id="currentYear"></span> © GLOBAL COLLEGE </p>
         <p>Todos los derechos reservados</p>
-
-
     </footer>
-
-
-
-
-    <!-- <footer class="piedepagina p-y-1" role="contentinfo">
-        <div class="container">
-
-            <ul class="row redes-sociales col-md-12 m-b-2 mx-auto">
-                <li class="col-xs-12"><a href="https://www.facebook.com/globalcollegemonterrey/"> <i
-                            class="fa fa-facebook" aria-hidden="false"></i>acebook </a> </li>
-                <li class="col-xs-12"><a href="tel:018125939620" data-scroll><i class="fa fa-phone"
-                            aria-hidden="false"></i>01 81 2593 9620</a></li>
-                <li class="col-xs-12"><a href="tel:018127551350" data-scroll><i class="fa fa-phone"
-                            aria-hidden="false"></i>01 81 2755 1350</a></li>
-                <li class="col-xs-12 hidden-xs-down"><a href="mailto:robertovega@globalcollegemonterrey.com" data-scroll
-                        style="align-items: stretch"><i class="fa fa-envelope" aria-hidden="false"></i>
-                        robertovega@globalcollegemonterrey.com </a></li>
-
-                <li class="col-xs-12 hidden-sm-up"><a href="mailto:robertovega@globalcollegemonterrey.com" data-scroll
-                        style="align-items: stretch"><i class="fa fa-envelope hidden-sm-down" aria-hidden="false"></i>
-                        robertovega</a></li>
-                <li class="col-xs-12 hidden-sm-up"><a href="mailto:robertovega@globalcollegemonterrey.com" data-scroll
-                        style="align-items: stretch"><i class="fa fa-envelope hidden-sm-down"
-                            aria-hidden="false"></i>@globalcollege </a></li>
-                <li class="col-xs-12 hidden-sm-up"><a href="mailto:robertovega@globalcollegemonterrey.com" data-scroll
-                        style="align-items: stretch"><i class="fa fa-envelope hidden-sm-down"
-                            aria-hidden="false"></i>monterrey.com </a></li>
-            </ul>
-
-            <p>2017 - 2018 © <a href="index.html" class="card-link m-b-0">GLOBAL COLLEGE</a> Todos los derechos
-                reservados</p>
-
-        </div>
-
-    </footer> -->
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

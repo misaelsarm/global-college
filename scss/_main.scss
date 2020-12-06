@@ -1,3 +1,38 @@
+.slider-container {
+    //width: 60%;
+    //margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+
+    border: 5px solid black;
+    .slide {
+        display: flex;
+        /* width: 100%;
+        height: 500px; */
+        &-img {
+            width: 100%;
+        }
+    }
+    .chevron {
+        &-right,
+        &-left {
+            position: absolute;
+            z-index: 2;
+            width: 20px !important;
+            color: white;
+            top: 50%;
+            transform: translate(0, -50%);
+            cursor: pointer;
+        }
+        &-right {
+            right: 20px;
+        }
+        &-left {
+            left: 20px;
+            transform: translate(0, -50%) rotate(180deg);
+        }
+    }
+}
 .intro {
     height: 100vh;
     background-image: linear-gradient(#034444c5), url("../assets/students.jpg");
@@ -22,6 +57,7 @@
         font-size: 45px;
         margin-bottom: 20px;
         font-weight: 600;
+        color: $global-college-primary;
     }
 
     .item {
@@ -54,7 +90,7 @@
     &-title {
         font-size: 45px;
         margin-bottom: 20px;
-        color: black;
+        color: $global-college-primary;
         font-weight: 600;
     }
     &-wrapper {
@@ -86,6 +122,7 @@
     padding: 20px;
     background-color: #f2f2f2;
     h2 {
+        color: $global-college-primary;
         font-size: 45px;
         margin-bottom: 20px;
         font-weight: 600;
@@ -98,7 +135,6 @@ footer {
     padding: 50px 20px 50px 20px;
 
     .image-logo {
-        
         img {
             width: 150px;
             margin-bottom: 30px;
@@ -115,6 +151,7 @@ footer {
         h2 {
             font-size: 25px;
             font-weight: 500;
+            margin-bottom: 20px;
         }
 
         ul {
@@ -123,15 +160,104 @@ footer {
                 margin-bottom: 30px;
             }
             li {
-                font-size: 20px;
                 list-style: none;
-                margin: 10px;
-                color: rgb(206, 203, 203);
+                a {
+                    font-size: 20px;
+                    text-decoration: none;
+                    list-style: none;
+                    //margin: 10px;
+                    margin-bottom: 10px;
+                    color: rgb(206, 203, 203);
+                }
             }
         }
     }
     p {
         font-size: 18px;
         text-align: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .intro {
+        display: flex;
+        flex-direction: column;
+        padding: 100px;
+        justify-content: center;
+        h2 {
+            // margin-left: 70px;
+            font-size: 75px;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+        p {
+            //margin-left: 70px;
+            font-size: 25px;
+            width: 60%;
+        }
+    }
+
+    .benefits {
+        padding: 100px;
+        &-title {
+            font-size: 75px;
+            font-weight: bold;
+            width: 60%;
+        }
+        &-item {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            // flex-wrap: wrap;
+        }
+
+        .item {
+            margin: 30px;
+            h2 {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .services {
+        padding: 100px;
+        &-title {
+            font-size: 75px;
+            font-weight: bold;
+        }
+        &-wrapper {
+            margin: 20px;
+        }
+
+        &-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .location {
+        padding: 100px;
+        h2 {
+            font-size: 75px;
+            font-weight: bold;
+        }
+    }
+
+    footer {
+        height: calc(100vh - 80px);
+        .footer-title {
+            font-size: 75px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        padding: 50px 100px 50px 100px;
+        .footer-links-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .contacto {
+                order: 1;
+            }
+        }
     }
 }

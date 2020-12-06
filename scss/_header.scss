@@ -26,3 +26,25 @@ header {
         color: white;
     }
 }
+
+@media (min-width: 1024px) {
+    header {
+        h1 {
+            font-size: 70px;
+            margin-bottom: 20px;
+            width: 60%;
+        }
+        p {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (min-width: 1366px) {
+    header {
+        h1 {
+            width: 50%;
+        }
+    }
+}
