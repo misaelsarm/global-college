@@ -95,8 +95,8 @@ nav .nav-grid a .nav-link {
 
 nav .nav-grid a .nav-link p {
   font-size: 25px;
-  font-weight: 700;
   color: white;
+  font-family: 'AvenirProBold';
 }
 
 nav .nav-grid a:nth-child(1) .nav-link {
@@ -197,7 +197,6 @@ header a {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-weight: 600;
   color: white;
 }
 
@@ -278,7 +277,6 @@ header a {
 .intro h2 {
   font-size: 45px;
   margin-bottom: 25px;
-  font-weight: 600;
 }
 
 .intro p {
@@ -292,7 +290,6 @@ header a {
 .benefits-title {
   font-size: 45px;
   margin-bottom: 20px;
-  font-weight: 600;
   color: #07466b;
 }
 
@@ -307,7 +304,6 @@ header a {
 .benefits .item h2 {
   font-size: 30px;
   margin-bottom: 20px;
-  font-weight: 600;
 }
 
 .benefits .item p {
@@ -329,7 +325,6 @@ header a {
   font-size: 45px;
   margin-bottom: 20px;
   color: #07466b;
-  font-weight: 600;
 }
 
 .services-wrapper {
@@ -346,7 +341,6 @@ header a {
 .services-wrapper h2 {
   font-size: 30px;
   margin-bottom: 20px;
-  font-weight: 600;
 }
 
 .services-wrapper p {
@@ -367,7 +361,6 @@ header a {
   color: #07466b;
   font-size: 45px;
   margin-bottom: 20px;
-  font-weight: 600;
 }
 
 footer {
@@ -384,7 +377,6 @@ footer .image-logo img {
 footer .footer-title {
   font-size: 45px;
   margin-bottom: 20px;
-  font-weight: 600;
 }
 
 footer .footer-links {
@@ -393,7 +385,6 @@ footer .footer-links {
 
 footer .footer-links h2 {
   font-size: 25px;
-  font-weight: 500;
   margin-bottom: 20px;
 }
 
@@ -439,7 +430,6 @@ footer p {
   .intro h2 {
     font-size: 75px;
     margin-bottom: 25px;
-    font-weight: bold;
   }
   .intro p {
     font-size: 25px;
@@ -450,7 +440,6 @@ footer p {
   }
   .benefits-title {
     font-size: 75px;
-    font-weight: bold;
     width: 60%;
   }
   .benefits-item {
@@ -462,15 +451,11 @@ footer p {
   .benefits .item {
     margin: 30px;
   }
-  .benefits .item h2 {
-    font-weight: bold;
-  }
   .services {
     padding: 100px;
   }
   .services-title {
     font-size: 75px;
-    font-weight: bold;
   }
   .services-wrapper {
     margin: 20px;
@@ -486,7 +471,6 @@ footer p {
   }
   .location h2 {
     font-size: 75px;
-    font-weight: bold;
   }
   footer {
     height: calc(100vh - 80px);
@@ -495,7 +479,6 @@ footer p {
   footer .footer-title {
     font-size: 75px;
     margin-bottom: 20px;
-    font-weight: bold;
   }
   footer .footer-links-wrapper {
     display: -webkit-box;
