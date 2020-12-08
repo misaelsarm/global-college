@@ -1,10 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: AvenirProRegular;
+  src: url("../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: AvenirProBold;
+  font-weight: bold;
+  src: url("../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype");
+}
+
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Work Sans", sans-serif;
+  font-family: "AvenirProRegular";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'AvenirProBold';
 }
 
 html {
@@ -201,7 +220,7 @@ header a {
 }
 
 .slider-container {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -401,6 +420,9 @@ footer p {
 }
 
 @media (min-width: 1024px) {
+  .slider-container {
+    width: 70%;
+  }
   .intro {
     display: -webkit-box;
     display: -ms-flexbox;

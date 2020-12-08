@@ -2,6 +2,8 @@ document.getElementById('menu').addEventListener('click', () => {
     document.getElementById('nav-grid').classList.toggle('nav-hidden')
 })
 
+document.getElementById('currentYear').textContent = new Date().getFullYear()
+
 const links = document.getElementById('nav-grid')
 Array.from(links.children).forEach(a => {
     a.addEventListener('click', () => {
