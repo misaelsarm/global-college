@@ -1,3 +1,7 @@
+AOS.init({
+    duration: 1200
+});
+
 document.getElementById('menu').addEventListener('click', () => {
     document.getElementById('nav-grid').classList.toggle('nav-hidden')
 })
