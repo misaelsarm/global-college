@@ -21,24 +21,32 @@ let counter = 1;
 const size = sliderImages[0].clientWidth;
 slide.style.transform = `translateX(${-size * counter}px)`
 
-
-next.addEventListener('click', () => {
+const moveNext = () => {
     if (counter >= sliderImages.length - 1) {
         return
     }
     slide.style.transition = 'transform 0.4s'
     counter++
     slide.style.transform = `translateX(${-size * counter}px)`
-})
+}
 
-prev.addEventListener('click', () => {
+const movePrev = () => {
     if (counter <= 0) {
         return
     }
     slide.style.transition = 'transform 0.4s'
     counter--;
     slide.style.transform = `translateX(${-size * counter}px)`
-})
+}
+
+next.addEventListener('click', moveNext)
+
+prev.addEventListener('click', movePrev)
+
+
+setInterval(() => {
+    moveNext()
+}, 5000);
 
 slide.addEventListener('transitionend', () => {
     if (sliderImages[counter].id === 'lastClone') {
