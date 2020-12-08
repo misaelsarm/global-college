@@ -1,10 +1,8 @@
 document.getElementById('menu').addEventListener('click', () => {
-    console.log('click')
     document.getElementById('nav-grid').classList.toggle('nav-hidden')
 })
 
 const links = document.getElementById('nav-grid')
-console.log(links.children)
 Array.from(links.children).forEach(a => {
     a.addEventListener('click', () => {
         document.getElementById('nav-grid').classList.toggle('nav-hidden')
@@ -20,7 +18,6 @@ const next = document.querySelector('#next')
 let counter = 1;
 const size = sliderImages[0].clientWidth;
 slide.style.transform = `translateX(${-size * counter}px)`
-console.log(size)
 
 
 next.addEventListener('click', () => {
@@ -42,7 +39,6 @@ prev.addEventListener('click', () => {
 })
 
 slide.addEventListener('transitionend', () => {
-    console.log('fired')
     if (sliderImages[counter].id === 'lastClone') {
         slide.style.transition = 'none';
         counter = sliderImages.length - 2
